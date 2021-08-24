@@ -3,7 +3,7 @@ import './styles/link.css'
 
 function Link() {
     return (
-        <div>
+        <div className="link">
             <h1>link</h1>
         </div>
     )

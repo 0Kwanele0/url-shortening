@@ -3,7 +3,7 @@ import './styles/url.css'
 
 function Url() {
     return (
-        <div>
+        <div className="url">
             <h1>URL</h1>
         </div>
     )
