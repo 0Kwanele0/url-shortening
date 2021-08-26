@@ -11,6 +11,7 @@
           align-items: center;
   overflow-x: hidden;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .showcase__text {
@@ -39,6 +40,7 @@
 
 .showcase p {
   font-size: 1.1rem;
+  font-weight: 600;
   color: #9e9aa7;
   margin-bottom: 30px;
 }

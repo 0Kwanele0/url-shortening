@@ -4,6 +4,7 @@
     align-items: center;
     overflow-x: hidden;
     text-align: center;
+    margin-bottom: 100px;
     &__text{
         padding: 0 25px;
         max-width: 600px;
@@ -24,6 +25,7 @@
     }
     & p{
         font-size: 1.1rem;
+        font-weight: 600;
         color: hsl(257, 7%, 63%);
         margin-bottom: 30px;
         @media screen and (min-width:378px) {
