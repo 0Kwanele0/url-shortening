@@ -4,7 +4,16 @@ import './styles/url.css'
 function Url() {
     return (
         <div className="url">
-            <h1>URL</h1>
+            <div className="url__input">
+                <form>
+                    <input placeholder="Shorten a link here..."/>
+                    <button>shorten it!</button>
+                </form>
+                
+            </div>
+            <div className="url__list">
+
+            </div>
         </div>
     )
 }
