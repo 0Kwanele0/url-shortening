@@ -1,4 +1,5 @@
 .url{
+    
     margin: 50px 20px;
     margin-bottom: 100px;
     padding: 38px;
@@ -43,6 +44,8 @@
 @media screen and (min-width:990px) {
     .url{
         margin: 50px 120px;
+        position: relative;
+    top: -120px;
         border-radius: 8px;
         &__input{
             & form{

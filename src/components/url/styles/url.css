@@ -65,6 +65,8 @@
 @media screen and (min-width: 990px) {
   .url {
     margin: 50px 120px;
+    position: relative;
+    top: -120px;
     border-radius: 8px;
   }
   .url__input form {
