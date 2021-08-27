@@ -1,5 +1,5 @@
 .stats {
-  padding: 90px 25px;
+  padding: 90px 25px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +11,12 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1220px) {
+  .stats {
+    padding: 90px 25px 60px 25px;
+  }
 }
 
 .stats__line {

@@ -4,12 +4,17 @@
     align-items: center;
     padding: 65px 20px;
     background-color: hsl(257, 27%, 26%);
+    background-image: url(../../../images/bg-boost-mobile.svg);
+    background-size: cover;
     color: white;
+    @media screen and (min-width: 1220px) {
+        background-image: url(../../../images/bg-boost-desktop.svg);
+        
+    }
     h2{
         font-size: 1.7rem;
         @media screen and (min-width: 1220px) {
             font-size: 1.9rem;
-            
         }
     }
 }
