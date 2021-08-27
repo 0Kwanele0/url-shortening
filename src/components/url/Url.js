@@ -9,10 +9,8 @@ function Url() {
                     <input placeholder="Shorten a link here..."/>
                     <button>shorten it!</button>
                 </form>
-                
             </div>
             <div className="url__list">
-
             </div>
         </div>
     )
