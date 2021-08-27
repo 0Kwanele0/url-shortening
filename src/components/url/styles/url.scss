@@ -4,6 +4,11 @@
     padding: 30px;
     background-color: hsl(257, 27%, 26%);
     border-radius:16px;
+    background-size: cover;
+    background-image: url(../../../images/bg-boost-mobile.svg);
+    @media screen and (min-width: 1220px) {
+        background-image: url(../../../images/bg-boost-desktop.svg);
+    }
     &__input{
         & form{
             display: flex;

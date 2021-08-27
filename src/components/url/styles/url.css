@@ -4,6 +4,14 @@
   padding: 30px;
   background-color: #3b3054;
   border-radius: 16px;
+  background-size: cover;
+  background-image: url(../../../images/bg-boost-mobile.svg);
+}
+
+@media screen and (min-width: 1220px) {
+  .url {
+    background-image: url(../../../images/bg-boost-desktop.svg);
+  }
 }
 
 .url__input form {
