@@ -11,6 +11,7 @@ function Statistics() {
             <p className="stats__sub-title">Track how your links are perfoming across
                 the web with our advanced statistics dashboard</p>
             <div className="stats__cards">
+                <div className="stats__line"></div>
                 <div className="indi">
                     <div className="img-cont"><img src={branded} alt="icon" /></div>
                     <h3>Brand Recognition</h3>

@@ -4,8 +4,22 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    @media screen and(min-width: 603px) {
-        
+    &__line{
+        width: 8px;
+        height: 1000px;
+        z-index: -1;
+        background-color: cyan;
+        position: absolute;
+        @media screen and(min-width: 828px) {
+            display: none;
+        }
+        @media screen and(min-width: 1220px) {
+            width: 1000PX;
+            height: 8px;
+            position: relative;
+            top: 160px;
+            display: block;
+        }
     }
     &__title{
         font-weight: 800;
@@ -32,10 +46,10 @@
         flex-wrap: wrap;
         justify-content: center;
         @media screen and(min-width: 1220px) {
-            :nth-child(2){
+            :nth-child(3){
                 top: 40px;
             }
-            :nth-child(3){
+            :nth-child(4){
                 top: 80px;
             }
         }

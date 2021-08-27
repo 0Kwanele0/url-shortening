@@ -13,6 +13,30 @@
   text-align: center;
 }
 
+.stats__line {
+  width: 8px;
+  height: 1000px;
+  z-index: -1;
+  background-color: cyan;
+  position: absolute;
+}
+
+@media screen and (min-width: 828px) {
+  .stats__line {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .stats__line {
+    width: 1000PX;
+    height: 8px;
+    position: relative;
+    top: 160px;
+    display: block;
+  }
+}
+
 .stats__title {
   font-weight: 800;
   font-size: 1.8rem;
@@ -53,10 +77,10 @@
 }
 
 @media screen and (min-width: 1220px) {
-  .stats__cards :nth-child(2) {
+  .stats__cards :nth-child(3) {
     top: 40px;
   }
-  .stats__cards :nth-child(3) {
+  .stats__cards :nth-child(4) {
     top: 80px;
   }
 }
