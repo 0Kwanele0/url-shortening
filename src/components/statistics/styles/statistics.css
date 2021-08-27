@@ -57,7 +57,7 @@
 }
 
 .stats__sub-title {
-  color: #bfbfbf;
+  color: #5f5d5d;
   font-weight: 500;
   font-weight: 500;
   max-width: 490px;
@@ -135,6 +135,15 @@
   border-radius: 50%;
   position: relative;
   top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stats__cards .indi h3 {

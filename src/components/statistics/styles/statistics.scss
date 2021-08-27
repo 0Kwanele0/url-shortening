@@ -34,7 +34,7 @@
         }
     }
     &__sub-title{
-        color: hsl(0, 0%, 75%);
+        color: hsl(0, 1%, 37%);
         font-weight: 500;
         font-weight: 500;
         max-width: 490px;
@@ -83,6 +83,9 @@
                 border-radius: 50%;
                 position: relative;
                 top: -40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             h3{
                 margin: 0;
