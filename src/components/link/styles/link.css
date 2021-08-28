@@ -24,6 +24,7 @@
 
 .link h2 {
   font-size: 1.7rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 1220px) {

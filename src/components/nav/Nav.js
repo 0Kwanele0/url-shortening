@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef} from 'react'
 import './styles/nav.css'
 
 function Nav() {
@@ -6,7 +6,7 @@ function Nav() {
     let menu = useRef()
 
     function changer() {
-        menu.current.style.display == "flex" ? menu.current.style.display = "none" : menu.current.style.display = "flex"
+        menu.current.style.display === "flex" ? menu.current.style.display = "none" : menu.current.style.display = "flex"
     }
     
     return (
