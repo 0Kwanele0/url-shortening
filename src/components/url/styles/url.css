@@ -60,6 +60,14 @@
   font-size: 22px;
   color: #eceef1;
   background-color: #2acfcf;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.url__input form button:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  background-color: #73e2e2;
 }
 
 @media screen and (min-width: 990px) {

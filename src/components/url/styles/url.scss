@@ -36,6 +36,11 @@
                 font-size: 22px;
                 color: rgb(236, 238, 241);
                 background-color: hsl(180, 66%, 49%);
+                transition: all 0.2s ease-in;
+                &:hover{
+                    transform: scale(105%);
+                    background-color: hsl(180, 66%, 67%);
+                }
             }
         }
     }
