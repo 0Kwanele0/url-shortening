@@ -43,9 +43,22 @@
                 }
             }
         }
+        .load{
+            text-align: center;
+            color: white;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
     }
 }
-
+@keyframes example {
+  0%   {color:rgb(69, 71, 72); }
+  25%  {color:rgb(216, 216, 167); }
+  50%  {color:rgb(126, 126, 207);}
+  75%  {color:rgb(173, 233, 173);}
+  100% {color:rgb(216, 165, 165); }
+}
 @media screen and (min-width:990px) {
     .url{
         margin: 50px 120px;

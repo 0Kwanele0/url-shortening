@@ -70,6 +70,53 @@
   background-color: #73e2e2;
 }
 
+.url__input .load {
+  text-align: center;
+  color: white;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  0% {
+    color: #454748;
+  }
+  25% {
+    color: #d8d8a7;
+  }
+  50% {
+    color: #7e7ecf;
+  }
+  75% {
+    color: #ade9ad;
+  }
+  100% {
+    color: #d8a5a5;
+  }
+}
+
+@keyframes example {
+  0% {
+    color: #454748;
+  }
+  25% {
+    color: #d8d8a7;
+  }
+  50% {
+    color: #7e7ecf;
+  }
+  75% {
+    color: #ade9ad;
+  }
+  100% {
+    color: #d8a5a5;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .url {
     margin: 50px 120px;

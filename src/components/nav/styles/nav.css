@@ -40,7 +40,7 @@
   padding: 0 13px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  color: rgba(94, 94, 94, 0.801);
+  color: rgba(65, 63, 63, 0.801);
   font-weight: 600;
   cursor: pointer;
 }
@@ -130,6 +130,7 @@
     font-weight: 600;
     padding: 12px 0;
     font-size: 20px;
+    color: white;
   }
   .nav__list .btns {
     -webkit-box-orient: vertical;

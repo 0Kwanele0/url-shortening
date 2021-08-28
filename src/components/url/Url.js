@@ -1,11 +1,13 @@
-import React,{useState} from 'react'
+import React,{ useState} from 'react'
 import './styles/url.css'
 
 function Url() {
     let [link, setlink] = useState("")
+    let [done, setdone] = useState(true)
     let mystore = window.localStorage
     
-    function shorten(ev) {
+    const shorten = (ev) => {
+        setdone(false)
         let links = []
         ev.preventDefault()
         fetch(`https://api.shrtco.de/v2/shorten?url=${link}`)
@@ -14,9 +16,8 @@ function Url() {
             links = JSON.parse(mystore.getItem('links')) || []
             links.push(data.result)
             mystore.setItem('links', JSON.stringify(links))
-            let stored = JSON.parse(mystore.getItem('links'))
             window.location.reload()
-            console.log(stored)
+            setdone(true)
         })
         setlink("")
     }
@@ -31,6 +32,8 @@ function Url() {
                     <input type="url" required={true} onChange={change} value={link} placeholder="Shorten a link here..."/>
                     <button type="submit">shorten it!</button>
                 </form>
+                {!done && 
+                <h3 className='load'>Loading please wait...</h3>}
             </div>
             <div className="url__list">
             </div>
