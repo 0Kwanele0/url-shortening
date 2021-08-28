@@ -13,7 +13,7 @@ function App() {
       <Nav />
       <Showcase />
       <Url />
-      <ShowLink />
+      <ShowLink list={JSON.parse(window.localStorage.getItem('links'))} />
       <Statistics />
       <Link />
       <Footer />
