@@ -1,9 +1,9 @@
 .url {
   margin: 50px 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding: 38px;
   background-color: #3b3054;
-  border-radius: 16px;
+  border-radius: 10px;
   background-size: cover;
   background-image: url(../../../images/bg-boost-mobile.svg);
 }
@@ -65,8 +65,6 @@
 @media screen and (min-width: 990px) {
   .url {
     margin: 50px 120px;
-    position: relative;
-    top: -120px;
     border-radius: 8px;
   }
   .url__input form {

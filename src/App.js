@@ -4,6 +4,7 @@ import Showcase from './components/showcase/Showcase'
 import Url from './components/url/Url'
 import Link from './components/link/Link'
 import Statistics from './components/statistics/Statistics'
+import ShowLink from './components/ShowLink/ShowLink'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Showcase />
       <Url />
+      <ShowLink />
       <Statistics />
       <Link />
       <Footer />

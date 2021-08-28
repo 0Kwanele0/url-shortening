@@ -1,0 +1,99 @@
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 20px;
+  padding: 0 38px;
+}
+
+.show__indi {
+  overflow-x: hidden;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 23PX 33PX;
+  -webkit-box-shadow: 0 0 22px 3px rgba(204, 204, 204, 0.37);
+          box-shadow: 0 0 22px 3px rgba(204, 204, 204, 0.37);
+}
+
+.show__indi button {
+  -webkit-box-flex: .6;
+      -ms-flex: .6;
+          flex: .6;
+  padding: 8px 32px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: white;
+  -webkit-box-shadow: 0 0 22px 5px rgba(204, 204, 204, 0.459);
+          box-shadow: 0 0 22px 5px rgba(204, 204, 204, 0.459);
+  font-family: 'Poppins';
+  background-color: cyan;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.show__indi h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.show__indi .long-link {
+  margin: 15px 0 0;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.show__indi .short-link {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin: 15px 0;
+  color: cyan;
+}
+
+@media screen and (min-width: 990px) {
+  .show {
+    margin: 50px 120px;
+  }
+  .show__indi {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10PX 33PX;
+  }
+  .show__indi .long-link {
+    margin: 15px 0;
+  }
+  .show__indi button {
+    width: auto;
+  }
+  .show__indi .short-link {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=showlink.css.map */

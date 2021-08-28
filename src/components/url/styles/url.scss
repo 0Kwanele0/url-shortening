@@ -1,10 +1,10 @@
 .url{
     
     margin: 50px 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 38px;
     background-color: hsl(257, 27%, 26%);
-    border-radius:16px;
+    border-radius:10px;
     background-size: cover;
     background-image: url(../../../images/bg-boost-mobile.svg);
     @media screen and (min-width: 1220px) {
@@ -44,21 +44,18 @@
 @media screen and (min-width:990px) {
     .url{
         margin: 50px 120px;
-        position: relative;
-    top: -120px;
         border-radius: 8px;
         &__input{
             & form{
                 display: flex;
-            flex-direction: row;
+                flex-direction: row;
             input{
-                    flex: 8;
-                    margin-right: 30px;
+                flex: 8;
+                margin-right: 30px;
                 }
                 button{
                     flex: 2;
                     padding: 18px 10px;
-                    
                 }
              }
         }
