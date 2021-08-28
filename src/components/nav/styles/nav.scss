@@ -4,6 +4,7 @@
     align-items: center;
     background-color: white;
     &__logo{
+        cursor: pointer;
         flex: 1;
     }
     &__list{
@@ -16,11 +17,21 @@
             padding: 0;
             li{
                 padding: 0 13px;
+                transition: all 0.2s ease-in;
+                color: rgba(94, 94, 94, 0.801);
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover{
+                    transform: scale(105%);
+                    color: black;
+                }
             }
         }
         .btns{
             display: flex;
             align-items: center;
+            
             button:nth-of-type(1){
                 background-color: transparent;
                 border: none;
@@ -32,6 +43,7 @@
                 border: none;
             }
             button{
+                cursor: pointer;
                 padding: 8px 28px;
                 margin: 0 10px;
                 font-size: 17px;

@@ -21,10 +21,17 @@
             font-size: 22px;
             padding: 7px 0;
             color: rgba(255, 255, 255, 0.604);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                transform: scale(102%);
+            }
         }
     }
     &__logo{
         padding: 10px 20px;
+        cursor: pointer;
         h1{
             font-size: 2.7rem;
             margin-top: 70px;
@@ -45,6 +52,11 @@
         justify-content: space-around;
         img{
             padding: 0 12px;
+            cursor: pointer;
+            transition: all .2s ease;
+            &:hover{
+                transform: scale(116%);
+            }
         }
     }
 }

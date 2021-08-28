@@ -40,10 +40,20 @@
   font-size: 22px;
   padding: 7px 0;
   color: rgba(255, 255, 255, 0.604);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  color: white;
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
 }
 
 .footer__logo {
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .footer__logo h1 {
@@ -74,6 +84,14 @@
 
 .footer__icons img {
   padding: 0 12px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__icons img:hover {
+  -webkit-transform: scale(116%);
+          transform: scale(116%);
 }
 
 @media screen and (min-width: 700px) {

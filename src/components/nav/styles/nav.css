@@ -10,6 +10,7 @@
 }
 
 .nav__logo {
+  cursor: pointer;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -37,6 +38,17 @@
 
 .nav__list ul li {
   padding: 0 13px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: rgba(94, 94, 94, 0.801);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav__list ul li:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  color: black;
 }
 
 .nav__list .btns {
@@ -61,6 +73,7 @@
 }
 
 .nav__list .btns button {
+  cursor: pointer;
   padding: 8px 28px;
   margin: 0 10px;
   font-size: 17px;
