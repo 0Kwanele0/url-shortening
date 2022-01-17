@@ -1,5 +1,5 @@
-import React,{ useState} from 'react'
-import './styles/url.css'
+import { useState} from 'react'
+import './styles/url.scss'
 
 function Url() {
     let [link, setlink] = useState("")

@@ -1,6 +1,5 @@
-import React from 'react'
 import Button from '../button/Button'
-import './styles/link.css'
+import './styles/link.scss'
 
 function Link() {
     return (
