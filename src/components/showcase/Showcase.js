@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles/showcase.css'
 import Illustration from '../../images/illustration-working.svg'
-import Button from '../button/Button'
 
 function Showcase() {
     return (
@@ -11,8 +10,7 @@ function Showcase() {
             </div>
             <div className="showcase__text">
                 <h1>More than just shorter links</h1>
-                <p>Build your brand's recognition and get detailed insights on how your links are perfoming.</p>
-                <Button text="Get Started"/>
+                <p>Build your brand's recognition through shorte links which are easily sharable.</p>
             </div>
         </div>
     )

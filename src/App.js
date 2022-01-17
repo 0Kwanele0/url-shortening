@@ -2,8 +2,6 @@ import Nav from './components/nav/Nav'
 import Footer from './components/footer/Footer'
 import Showcase from './components/showcase/Showcase'
 import Url from './components/url/Url'
-import Link from './components/link/Link'
-import Statistics from './components/statistics/Statistics'
 import ShowLink from './components/ShowLink/ShowLink'
 
 
@@ -14,8 +12,6 @@ function App() {
       <Showcase />
       <Url />
       <ShowLink list={JSON.parse(window.localStorage.getItem('links'))} />
-      <Statistics />
-      <Link />
       <Footer />
     </div>
   );
