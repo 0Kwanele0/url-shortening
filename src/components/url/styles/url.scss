@@ -1,10 +1,9 @@
 .url{
-    
-    margin: 50px 20px;
+    margin: 20px 20px;
     margin-bottom: 50px;
     padding: 38px;
     background-color: hsl(257, 27%, 26%);
-    border-radius:10px;
+    border-radius:2px;
     background-size: cover;
     background-image: url(../../../images/bg-boost-mobile.svg);
     @media screen and (min-width: 1220px) {
@@ -16,7 +15,7 @@
             flex-direction: column;
             input{
                 font-size: 16px;
-                border-radius:8px;
+                border-radius:2px;
                 font-weight: 700;
                 margin: 10px 0;
                 padding: 18px 10px;
@@ -29,7 +28,7 @@
             button{
                 margin: 10px 0;
                 padding: 18px 10px;
-                border-radius:8px;
+                border-radius:2px;
                 font-weight: 700;
                 border: none;
                 outline: none;

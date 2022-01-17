@@ -1,5 +1,4 @@
-import React from 'react'
-import './styles/showcase.css'
+import './styles/showcase.scss'
 import Illustration from '../../images/illustration-working.svg'
 
 function Showcase() {
