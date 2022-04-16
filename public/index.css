@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-body {
+* {
   box-sizing: border-box;
+}
+body {
   margin: 0 auto;
   max-width: 1400px;
   padding: 10px 6rem;
