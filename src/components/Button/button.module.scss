@@ -11,9 +11,9 @@
   margin: 10px;
   transition: all 0.3s ease;
   &:hover {
-    background-color: rgb(62, 148, 235);
+    background-color: rgb(88, 62, 235);
   }
-  &:focus {
+  &:active {
     color: hotpink;
   }
 }

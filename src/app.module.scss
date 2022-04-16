@@ -21,15 +21,15 @@
       align-items: center;
       input {
         width: 100%;
-        font-size: 22px;
+        font-size: 16px;
         padding: 10px 12px;
         border-radius: 6px;
         outline: none;
         border: 1.8px solid rgba(3, 3, 3, 0.4);
-        color: darkslateblue;
+        color: rgb(75, 67, 124);
       }
       input::placeholder {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }

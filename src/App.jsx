@@ -21,13 +21,18 @@ function App() {
     });
     e.preventDefault();
   }
+
+  function clearStorage() {
+    localStorage.clear("shortlinks");
+    setSubmit(!submit);
+  }
+
   function formChange(e) {
     setData(e.target.value);
   }
 
   useEffect(() => {
     setLinks(JSON.parse(localStorage.getItem("shortlinks")) || []);
-    console.log(links);
   }, [submit]);
 
   return (
@@ -55,12 +60,12 @@ function App() {
           </form>
         </section>
       </div>
-      <section className={styles.displayLinks}>
+      <section>
         {links.length > 0 && (
-          <div>
+          <div className={styles.displayLinks}>
             <div className={styles.header}>
               <p>Your links</p>
-              <p>Clear all</p>
+              <p onClick={clearStorage}>Clear all</p>
             </div>
             {links.map((item, key) => {
               return <LinkCard key={key} data={item} />;
