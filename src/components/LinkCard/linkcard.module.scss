@@ -15,3 +15,25 @@
     font-weight: 500;
   }
 }
+
+@media screen and(max-width: 770px) {
+  .card {
+  }
+}
+@media screen and(max-width: 650px) {
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    p {
+      width: 100%;
+    }
+    .btnContainer {
+      width: 100%;
+    }
+  }
+}

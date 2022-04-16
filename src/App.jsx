@@ -18,6 +18,7 @@ function App() {
       links.push(data.result);
       localStorage.setItem("shortlinks", JSON.stringify(links));
       setSubmit(!submit);
+      setData("");
     });
     e.preventDefault();
   }
@@ -36,7 +37,7 @@ function App() {
   }, [submit]);
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <div className={styles.container}>
         <img className={styles.image} src={banner} alt="url shorten banner" />
         <section className={styles.text}>
@@ -56,7 +57,9 @@ function App() {
               type="url"
               onChange={formChange}
             />
-            <Button text="Shorten" />
+            <div className={styles.btnContainer}>
+              <Button text="Shorten" />
+            </div>
           </form>
         </section>
       </div>

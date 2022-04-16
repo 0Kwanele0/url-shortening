@@ -34,7 +34,9 @@ function LinkCard(props) {
           {props.data.short_link}
         </p>
       </div>
-      <Button text={text} buttonClicked={copyLink} />
+      <div className={styles.btnContainer}>
+        <Button text={text} buttonClicked={copyLink} />
+      </div>
     </div>
   );
 }
