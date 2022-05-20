@@ -1,4 +1,3 @@
-import Button from "../Button/Button";
 import { useRef, useEffect } from "react";
 import styles from "./linkcard.module.scss";
 import { useState } from "react";
@@ -35,7 +34,9 @@ function LinkCard(props) {
         </p>
       </div>
       <div className={styles.btnContainer}>
-        <Button text={text} buttonClicked={copyLink} />
+        <button onClick={copyLink} className={styles.btn}>
+          {text}
+        </button>
       </div>
     </div>
   );

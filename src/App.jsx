@@ -2,30 +2,37 @@ import { useState, useEffect } from "react";
 
 import banner from "./assets/banner.svg";
 import styles from "./app.module.scss";
-import Button from "./components/Button/Button";
 import LinkCard from "./components/LinkCard/LinkCard";
+
 function App() {
   const [data, setData] = useState("");
   const [links, setLinks] = useState(
     JSON.parse(localStorage.getItem("shortlinks")) || []
   );
-  const [submit, setSubmit] = useState(false);
 
-  function handleForm(e) {
-    fetch(`https://api.shrtco.de/v2/shorten?url=${data}`).then(async (res) => {
-      const data = await res.json();
-      console.log(data.result);
-      links.push(data.result);
-      localStorage.setItem("shortlinks", JSON.stringify(links));
-      setSubmit(!submit);
-      setData("");
-    });
-    e.preventDefault();
+  const [submit, setSubmit] = useState(false);
+  const [change, setChange] = useState(false);
+
+  async function handleForm(e) {
+    try {
+      setSubmit(true);
+      fetch(`https://api.shrtco.de/v2/shorten?url=${data}`).then(
+        async (res) => {
+          const data = await res.json();
+          console.log(data.result);
+          links.push(data.result);
+          localStorage.setItem("shortlinks", JSON.stringify(links));
+          setSubmit(false);
+          setData("");
+        }
+      );
+      e.preventDefault();
+    } catch (err) {}
   }
 
   function clearStorage() {
     localStorage.clear("shortlinks");
-    setSubmit(!submit);
+    setChange(!change);
   }
 
   function formChange(e) {
@@ -33,8 +40,12 @@ function App() {
   }
 
   useEffect(() => {
-    setLinks(JSON.parse(localStorage.getItem("shortlinks")) || []);
-  }, [submit]);
+    if (localStorage.getItem("shortlinks")) {
+      setLinks(JSON.parse(localStorage.getItem("shortlinks")) || []);
+    } else {
+      setLinks([]);
+    }
+  }, [change]);
 
   return (
     <div style={{ width: "100%" }}>
@@ -58,7 +69,9 @@ function App() {
               onChange={formChange}
             />
             <div className={styles.btnContainer}>
-              <Button text="Shorten" />
+              <button type="submit" className={styles.btn}>
+                {submit ? "Loading..." : "Shorten"}
+              </button>
             </div>
           </form>
         </section>

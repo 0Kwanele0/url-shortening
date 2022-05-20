@@ -14,6 +14,28 @@
     color: rgb(64, 75, 235);
     font-weight: 500;
   }
+  .btn {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: fit-content;
+    color: white;
+    border: none;
+    background-color: dodgerblue;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 9px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: rgb(88, 62, 235);
+    }
+    &:active {
+      color: hotpink;
+    }
+  }
 }
 
 @media screen and(max-width: 770px) {
