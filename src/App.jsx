@@ -6,9 +6,7 @@ import LinkCard from "./components/LinkCard/LinkCard";
 
 function App() {
   const [data, setData] = useState("");
-  const [links, setLinks] = useState(
-    JSON.parse(localStorage.getItem("shortlinks")) || []
-  );
+  const [links, setLinks] = useState([]);
 
   const [submit, setSubmit] = useState(false);
   const [change, setChange] = useState(false);
@@ -41,7 +39,7 @@ function App() {
 
   useEffect(() => {
     if (localStorage.getItem("shortlinks")) {
-      setLinks(JSON.parse(localStorage.getItem("shortlinks")) || []);
+      setLinks(JSON.parse(localStorage.getItem("shortlinks")));
     } else {
       setLinks([]);
     }
